@@ -11,16 +11,11 @@
     <h2>Major:</h2>
     <p>Computer Programming and Applications</p>
     <p>Welcome to my website</p>
-    <p>Current time is:
-      <span id = "Hour"></span> :
-      <span id = "Minutes></span>
-    </p>
     <script>
       var today = new Date();
       var hours = today.getHours();
       var minutes = today.getMinutes();
-      document.getElementByID('Hour').innerHTML = hours;
-      document.getElementByID('Minutes').innerHTML = minutes;
+      document.write("Current time is : " + hours + " : " + minutes);
       if(hours > 6 && hours < 12){
         document.body.style.backgroundColor = "lightblue";
       }
