@@ -11,18 +11,26 @@
     <h2>Major:</h2>
     <p>Computer Programming and Applications</p>
     <p>Welcome to my website</p>
+    <p>Current time is:
+      <span id = "Hour"></span> :
+      <span id = "Minutes></span>
+    </p>
     <script>
       var today = new Date();
-      if(today.getHours() > 6 && today.getHours() < 12){
+      var hours = today.getHours();
+      var minutes = today.getMinutes();
+      document.getElementByID("Hour") = hours;
+      document.getElementByID("Minutes") = minutes;
+      if(hours > 6 && hours < 12){
         document.body.style.backgroundColor = "lightblue";
       }
-      else if(today.getHours() > 12 && today.getHours() < 18){
+      else if(hours > 12 && hours < 18){
         document.body.style.backgroundColor = "yellow";
       }
-      else if (today.getHours() > 18 && today.getHours() < 21){
+      else if (hours > 18 && hours < 21){
         document.body.style.backgroundColor = "lightgreen";
       }
-      else if (today.getHours() > 21 && today.getHours() < 6){
+      else if (hours > 21 && hours < 6){
         document.bodu.style.backgroundColor = "grey";
       }
     </script>
