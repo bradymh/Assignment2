@@ -4,12 +4,27 @@
     <meta charset="utf-8" />
     <title>Assigment 2</title>
   </head>
-  <body style="background-color:lightblue;">
+  <body>
     <h1>Brady Hopkins</h1>
     <h2>Course:</h2>
     <p>Web Applications Programming</p>
     <h2>Major:</h2>
     <p>Computer Programming and Applications</p>
     <p>Welcome to my website</p>
+    <script>
+      var today = new Date();
+      if(today.getHours() > 6 && today.getHours() < 12){
+        document.body.style.backgroundColor = "lightblue";
+      }
+      else if(today.getHours() > 12 && today.getHours() < 18){
+        document.body.style.backgroundColor = "yellow";
+      }
+      else if (today.getHours() > 18 && today.getHours() < 21){
+        document.body.style.backgroundColor = "lightgreen";
+      }
+      else if (today.getHours() > 21 && today.getHours() < 6){
+        document.bodu.style.backgroundColor = "grey";
+      }
+    </script>
   </body>
 </html>
