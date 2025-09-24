@@ -11,11 +11,12 @@
     <h2>Major:</h2>
     <p>Computer Programming and Applications</p>
     <p>Welcome to my website</p>
+    <img id="image1" src="pictures/sunrise.jpg">
     <script>
       var today = new Date();
       var hours = today.getHours();
       var minutes = today.getMinutes();
-      document.write("Current time is : " + hours + " : " + minutes);
+      document.write("You entered this page at: " + hours + " : " + minutes);
       if(hours > 6 && hours < 12){
         document.body.style.backgroundColor = "lightblue";
       }
