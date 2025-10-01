@@ -17,22 +17,22 @@
       var hours = today.getHours();
       var minutes = today.getMinutes();
       document.write("You entered this page at: " + hours + " : " + minutes);
-      var image = document.getElementById("image1")
+      <!-- var image = document.getElementById("image1") -->
       if(hours > 6 && hours < 12){
         document.body.style.backgroundColor = "lightblue";
-        image.src = "pictures/sunrise.jpg"
+        <!-- image.src = "pictures/sunrise.jpg" -->
       }
       else if(hours > 12 && hours < 18){
         document.body.style.backgroundColor = "yellow";
-        image.src = "pictures/sun.jpg"
+        <!-- image.src = "pictures/sun.jpg" -->
       }
       else if (hours > 18 && hours < 21){
         document.body.style.backgroundColor = "lightgreen";
-        image.src = "pictures/sunset.jpg"
+        <!-- image.src = "pictures/sunset.jpg" -->
       }
       else if (hours > 21 && hours < 6){
         document.bodu.style.backgroundColor = "grey";
-        image.src = "pictures/sunset.jpg"
+        <!-- image.src = "pictures/sunset.jpg" -->
       }
     </script>
   </body>
