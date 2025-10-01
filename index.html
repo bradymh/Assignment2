@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>Assigment 2</title>
+    <title>Brady's Website</title>
   </head>
   <body>
     <h1>Brady Hopkins</h1>
@@ -11,22 +11,28 @@
     <h2>Major:</h2>
     <p>Computer Programming and Applications</p>
     <p>Welcome to my website</p>
+    <img id="image1" src="pictures/sunrise.jpg">
     <script>
       var today = new Date();
       var hours = today.getHours();
       var minutes = today.getMinutes();
-      document.write("Current time is : " + hours + " : " + minutes);
+      document.write("You entered this page at: " + hours + " : " + minutes);
+      var image = document.getElementById("image1")
       if(hours > 6 && hours < 12){
         document.body.style.backgroundColor = "lightblue";
+        image.src = "pictures/sunrise.jpg"
       }
       else if(hours > 12 && hours < 18){
         document.body.style.backgroundColor = "yellow";
+        image.src = "pictures/sun.jpg"
       }
       else if (hours > 18 && hours < 21){
         document.body.style.backgroundColor = "lightgreen";
+        image.src = "pictures/sunset.jpg"
       }
       else if (hours > 21 && hours < 6){
         document.bodu.style.backgroundColor = "grey";
+        image.src = "pictures/sunset.jpg"
       }
     </script>
   </body>
